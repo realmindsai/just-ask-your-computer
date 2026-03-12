@@ -1,0 +1,32 @@
+/* ABOUTME: RMAI brand color overrides for MkDocs Material theme */
+/* ABOUTME: Applies Signature Purple, Primary Orange, and dark palette */
+
+:root {
+  --md-primary-fg-color: #A77ACD;
+  --md-primary-fg-color--light: #c4a3e0;
+  --md-primary-fg-color--dark: #8a5cb3;
+  --md-accent-fg-color: #F26541;
+  --md-typeset-a-color: #A77ACD;
+}
+
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #FAF9F7;
+}
+
+.md-header {
+  background-color: #1A1B25;
+}
+
+.md-tabs {
+  background-color: #373841;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  color: #1A1B25;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-color: #A77ACD;
+}

@@ -1,0 +1,57 @@
+site_name: Just Ask Your Computer
+site_url: https://realmindsai.github.io/just-ask-your-computer
+site_description: Install a few tools. Ask your computer a question. Watch it answer.
+repo_url: https://github.com/realmindsai/just-ask-your-computer
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: custom
+    accent: custom
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - content.code.copy
+    - content.tabs.link
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - navigation.top
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Terminal — Mac: getting-started/terminal-mac.md
+    - Terminal — Windows (WSL2): getting-started/terminal-windows.md
+    - Where Should You Work: getting-started/where-to-work.md
+    - Permissions: getting-started/permissions.md
+  - The Toolkit:
+    - Core Stack: toolkit/core-stack.md
+    - AI Tools: toolkit/ai-tools.md
+    - Recommended Tools: toolkit/recommended-tools.md
+    - Tool Catalog: toolkit/tool-catalog.md
+    - Project Config: toolkit/project-config.md
+  - Institution Guides:
+    - institutions/index.md
+    - RMIT: institutions/rmit.md
+    - La Trobe: institutions/latrobe.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - attr_list
+  - md_in_html
+  - tables

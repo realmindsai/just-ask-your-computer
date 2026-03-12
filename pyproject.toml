@@ -1,0 +1,8 @@
+[project]
+name = "just-ask-your-computer"
+version = "0.1.0"
+description = "Just Ask Your Computer — AI tools setup guide"
+requires-python = ">=3.11"
+dependencies = [
+    "mkdocs-material>=9.5",
+]
