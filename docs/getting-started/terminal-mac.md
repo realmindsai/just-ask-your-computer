@@ -8,6 +8,26 @@ Press `Cmd+Space` to open Spotlight, type **Terminal**, press Enter.
 
 You'll see a window with a command prompt. This is where you'll run install commands.
 
+## Install Homebrew
+
+Homebrew is a package manager for Mac — you'll need it to install some of the recommended tools.
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+After it finishes, follow any instructions it prints about adding Homebrew to your PATH. Then reload:
+
+```bash
+exec zsh
+```
+
+Verify:
+
+```bash
+brew --version
+```
+
 ## Navigate to a folder
 
 Drag a folder from Finder onto the Terminal window. It pastes the path. Hit Enter.

@@ -18,7 +18,7 @@ AI tools update weekly. The commands, conventions, and best practices shift cons
 
 Copy this into a file called `CLAUDE.md` in your project folder:
 
-```markdown
+```text
 # CLAUDE.md
 
 ## Tools
@@ -33,24 +33,42 @@ Copy this into a file called `CLAUDE.md` in your project folder:
 - Test before committing
 ```
 
-## Link CLAUDE.md and AGENTS.md
+## One config for all three AI CLIs
 
-Write one file, reference the other. One source of truth for all three AI CLIs.
+Claude Code reads `CLAUDE.md`. Gemini CLI and Codex read `AGENTS.md`. You don't want to maintain two files that say the same thing.
 
-**Option A:** AGENTS.md points to CLAUDE.md
+**The fix:** Write your config in one file, then create the other file with a single line pointing to it.
 
-Create `AGENTS.md` with:
+### If Claude Code is your primary tool
 
-```markdown
+Create your config in `CLAUDE.md` (as shown above), then create a one-line `AGENTS.md`:
+
+```text
 See CLAUDE.md for project conventions.
 ```
 
-**Option B:** CLAUDE.md points to AGENTS.md (if you prefer Gemini as primary)
+### If Gemini CLI is your primary tool
 
-Create `CLAUDE.md` with:
+Create your config in `AGENTS.md`, then create a one-line `CLAUDE.md`:
 
-```markdown
+```text
 See AGENTS.md for project conventions.
 ```
 
-Either way, you maintain one file and all three tools use the same context.
+### Creating both files
+
+=== "Mac"
+
+    ```bash
+    # If CLAUDE.md is your primary config:
+    echo "See CLAUDE.md for project conventions." > AGENTS.md
+    ```
+
+=== "Linux (WSL2)"
+
+    ```bash
+    # If CLAUDE.md is your primary config:
+    echo "See CLAUDE.md for project conventions." > AGENTS.md
+    ```
+
+Now all three AI tools share the same project context.

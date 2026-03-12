@@ -19,6 +19,8 @@ theme:
     - navigation.sections
     - navigation.instant
     - navigation.top
+  logo: assets/images/rmai_logo.svg
+  favicon: assets/images/rmai_logo.svg
   icon:
     repo: fontawesome/brands/github
 
@@ -32,6 +34,7 @@ nav:
     - Terminal — Windows (WSL2): getting-started/terminal-windows.md
     - Where Should You Work: getting-started/where-to-work.md
     - Permissions: getting-started/permissions.md
+    - WSL Home Folder: getting-started/wsl-home-folder.md
   - The Toolkit:
     - Core Stack: toolkit/core-stack.md
     - AI Tools: toolkit/ai-tools.md
@@ -55,3 +58,6 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

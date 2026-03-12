@@ -36,9 +36,9 @@ When you run `claude` for the first time, it prints a URL in the terminal:
 
 === "Linux (WSL2)"
 
-    1. Highlight the URL in the terminal (it auto-copies) or press `Ctrl+Shift+C`
+    1. When Claude prints the URL, press `c` to copy it
     2. Open your Windows browser (Chrome, Edge, etc.)
-    3. Paste the URL into the address bar and press Enter
+    3. Paste the URL into the address bar (`Ctrl+V`) and press Enter
     4. Sign in with your Anthropic account
     5. Approve the connection
     6. Copy the code it gives you
@@ -89,11 +89,21 @@ gemini
 
 Select "Login with Google." Same browser flow — URL, sign in, approve, come back.
 
-Or get a free API key from [aistudio.google.com/apikey](https://aistudio.google.com/apikey):
+Or use a free API key from [aistudio.google.com/apikey](https://aistudio.google.com/apikey). Generate a key on that page, then add it to your shell config so it's available every time you open a terminal:
 
-```bash
-export GEMINI_API_KEY="your-key-here"
-```
+=== "Mac"
+
+    ```bash
+    echo 'export GEMINI_API_KEY="paste-your-key-here"' >> ~/.zshrc
+    exec zsh
+    ```
+
+=== "Linux (WSL2)"
+
+    ```bash
+    echo 'export GEMINI_API_KEY="paste-your-key-here"' >> ~/.bashrc
+    exec bash
+    ```
 
 ---
 
@@ -115,11 +125,21 @@ npm install -g @openai/codex
 codex
 ```
 
-Same browser flow, or set an API key:
+Same browser flow, or use an API key from [platform.openai.com/api-keys](https://platform.openai.com/api-keys):
 
-```bash
-export OPENAI_API_KEY="your-key-here"
-```
+=== "Mac"
+
+    ```bash
+    echo 'export OPENAI_API_KEY="paste-your-key-here"' >> ~/.zshrc
+    exec zsh
+    ```
+
+=== "Linux (WSL2)"
+
+    ```bash
+    echo 'export OPENAI_API_KEY="paste-your-key-here"' >> ~/.bashrc
+    exec bash
+    ```
 
 ---
 

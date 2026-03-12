@@ -17,7 +17,7 @@ Restart your computer if prompted.
 
 ## Create your Linux user
 
-When Ubuntu opens for the first time, it asks for a username and password:
+When Ubuntu opens for the first time, it asks for a username and password. This is required by Linux — it only happens once.
 
 - **Username**: short, lowercase, no spaces (e.g., `jane`)
 - **Password**: easy to remember — you'll need it occasionally
@@ -30,19 +30,23 @@ From now on, open Ubuntu from the Start menu — type `Ubuntu`, click the app.
 
 ## Pin your Linux home folder in Explorer
 
+Your Linux home folder is where AI tools store their config files (like `CLAUDE.md`). Pin it for quick access.
+
 In your Ubuntu terminal, run:
 
 ```bash
+cd
 explorer.exe .
 ```
 
 This opens your Linux home directory in a Windows Explorer window. Right-click the folder and select **Pin to Quick access**.
 
-Now your Linux files are one click away in Explorer.
+!!! note "This is for config, not your daily work"
+    Your actual research files stay in OneDrive — see [Where Should You Work](where-to-work.md). The Linux home folder is just for AI tool configuration.
 
-## Navigate to a folder
+## Navigate to a project folder
 
-In Explorer, navigate to your project folder. Type `wsl` in the address bar and hit Enter.
+In Explorer, navigate to your project folder (e.g., in OneDrive). Type `wsl` in the address bar and hit Enter.
 
 You're now in a terminal at that folder.
 
@@ -62,3 +66,6 @@ exec bash
 
 ??? tip "Terminal says 'command not found'?"
     Run `exec bash` to reload. If that doesn't work, close the Ubuntu window and reopen it from the Start menu.
+
+??? tip "WSL feels slow?"
+    If you're working with very large projects (thousands of files, big git repos), you can work in your [Linux home folder](wsl-home-folder.md) instead. For everyday research tasks, OneDrive is fine.

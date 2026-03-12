@@ -59,7 +59,7 @@ If you want to install Claude Desktop (the GUI app), you need temporary elevated
 
 ## Mac
 
-You should already have admin rights on your RMIT Mac. If you don't, contact RMIT ICT to request them.
+You should already have admin rights on your RMIT Mac. If you don't, follow the [RMIT software installation guide for Mac](https://rmititsm.service-now.com/sp?id=kb_article&sys_id=8612eca283657e90a08cb898beaad346) or contact RMIT ICT to request them.
 
 Once you have admin rights, go straight to the [Core Stack](../toolkit/core-stack.md) setup.
 
