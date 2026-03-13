@@ -145,5 +145,8 @@ claude --version
 
 Log in — see [AI Tools](ai-tools.md) for the full authentication walkthrough.
 
+!!! note "Other AI tools"
+    Claude Code is the primary tool, but there are free and optional alternatives. See [AI Tools](ai-tools.md) for Gemini CLI (free) and OpenAI Codex.
+
 ??? tip "'Command not found' after installing?"
     Reload your terminal (`exec zsh` on Mac, `exec bash` on WSL2). If that doesn't work, close and reopen the terminal window.

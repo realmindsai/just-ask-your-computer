@@ -4,6 +4,28 @@ Not required, but these tools make the AI CLIs more capable. Install any that se
 
 ---
 
+## Homebrew (Mac only)
+
+Most of the tools below install via Homebrew on Mac. If you don't have it yet:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+After it finishes, follow any instructions it prints about adding Homebrew to your PATH. Then reload:
+
+```bash
+exec zsh
+```
+
+Verify:
+
+```bash
+brew --version
+```
+
+---
+
 ## gh (GitHub CLI)
 
 Manage repositories, pull requests, and issues from the terminal. Claude Code can use `gh` to interact with GitHub on your behalf.
@@ -14,11 +36,7 @@ Manage repositories, pull requests, and issues from the terminal. Claude Code ca
     brew install gh
     ```
 
-    Don't have Homebrew? Install it first:
-
-    ```bash
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    ```
+    Don't have Homebrew? [Install it first](#homebrew-mac-only).
 
 === "Linux (WSL2)"
 
