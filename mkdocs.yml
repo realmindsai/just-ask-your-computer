@@ -10,7 +10,7 @@ theme:
     primary: custom
     accent: custom
   font:
-    text: Inter
+    text: Epilogue
     code: JetBrains Mono
   features:
     - content.code.copy
@@ -19,10 +19,17 @@ theme:
     - navigation.sections
     - navigation.instant
     - navigation.top
-  logo: assets/images/rmai_logo.svg
+  logo: assets/images/rmai_logo_white.svg
   favicon: assets/images/rmai_logo.svg
   icon:
     repo: fontawesome/brands/github
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/realmindsai/just-ask-your-computer
+  copyright: Real Minds Artificial Intelligence
 
 extra_css:
   - assets/stylesheets/extra.css
