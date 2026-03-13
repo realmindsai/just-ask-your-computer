@@ -181,12 +181,33 @@
 
 /* ── Footer ── */
 .md-footer {
+  background-color: var(--rmai-slate);
+}
+
+.md-footer-meta {
   background-color: var(--rmai-black);
 }
 
 .md-copyright {
-  color: var(--rmai-gray);
+  color: #c4c4c8;
   font-size: 0.75rem;
+}
+
+.md-footer-nav__link,
+.md-footer__link {
+  color: #c4c4c8;
+}
+
+.md-footer__title {
+  color: #e0dce4;
+}
+
+.md-social__link {
+  color: #c4c4c8;
+}
+
+.md-social__link:hover {
+  color: var(--rmai-purple);
 }
 
 /* ── Sidebar nav ── */
