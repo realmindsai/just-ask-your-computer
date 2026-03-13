@@ -51,18 +51,18 @@
 }
 
 .md-tabs {
-  background-color: var(--rmai-white);
-  border-bottom: 1px solid var(--rmai-border);
+  background-color: var(--rmai-plum);
+  border-bottom: none;
 }
 
 .md-tabs__link {
-  color: var(--rmai-text);
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
 }
 
 .md-tabs__link--active,
 .md-tabs__link:hover {
-  color: var(--rmai-plum);
+  color: #FFFFFF;
 }
 
 /* ── Logo sizing — match header text height ── */
@@ -112,15 +112,17 @@
   color: var(--rmai-black);
 }
 
-/* ── Links ── */
+/* ── Links — visible underline so they stand out from body text ── */
 .md-typeset a {
   color: var(--rmai-plum);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: rgba(92, 75, 110, 0.35);
+  text-underline-offset: 2px;
 }
 
 .md-typeset a:hover {
   color: var(--rmai-black);
-  text-decoration: underline;
+  text-decoration-color: var(--rmai-black);
 }
 
 /* ── Tables (clean, white cards) ── */
