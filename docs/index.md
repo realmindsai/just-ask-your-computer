@@ -14,11 +14,11 @@ Install a few tools. Ask your computer a question. Watch it answer.
 
 ## The Story
 
-Someone wanted to know whether traffic cameras in their city correlate with accident rates and road slope.
+Someone wanted to know whether traffic cameras in their city actually correlate with accident hotspots.
 
 They didn't write code. They didn't hire a developer. They didn't spend three weeks on it.
 
-They asked their computer. It found the data. It wrote the Python code. It gave them the answer.
+They asked their computer. It found the open data. It wrote the Python code. It ran the statistics. It gave them [a 10-page report with 19 tables and a logistic regression](traffic-camera-report.md).
 
 That's what these tools do. You have a question — your computer handles the rest.
 

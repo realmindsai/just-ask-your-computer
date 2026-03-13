@@ -29,6 +29,7 @@ extra_css:
 
 nav:
   - Home: index.md
+  - The Report: traffic-camera-report.md
   - Getting Started:
     - Terminal — Mac: getting-started/terminal-mac.md
     - Terminal — Windows (WSL2): getting-started/terminal-windows.md
