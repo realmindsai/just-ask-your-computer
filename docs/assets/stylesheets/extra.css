@@ -1,39 +1,68 @@
-/* ABOUTME: RMAI brand overrides for MkDocs Material theme */
-/* ABOUTME: Applies Signature Purple, Primary Orange, Epilogue font, and branded component styles */
+/* ABOUTME: RMAI brand overrides matching realmindsai.com.au color scheme */
+/* ABOUTME: Plum primary, clean whites, subtle borders, elegant minimalism */
 
-/* ── Brand palette ── */
+/* ── Brand palette (matched to realmindsai.com.au) ── */
 :root {
-  --md-primary-fg-color: #A77ACD;
-  --md-primary-fg-color--light: #c4a3e0;
-  --md-primary-fg-color--dark: #8a5cb3;
-  --md-accent-fg-color: #F26541;
-  --md-typeset-a-color: #A77ACD;
+  --md-primary-fg-color: #5C4B6E;
+  --md-primary-fg-color--light: #7a6a8c;
+  --md-primary-fg-color--dark: #4a3b5a;
+  --md-accent-fg-color: #5C4B6E;
+  --md-typeset-a-color: #5C4B6E;
   --rmai-black: #1A1B25;
-  --rmai-slate: #373841;
-  --rmai-purple: #A77ACD;
-  --rmai-orange: #F26541;
-  --rmai-offwhite: #FAF9F7;
-  --rmai-oat: #F1E8D7;
-  --rmai-border: #E7E7EA;
-  --rmai-gray: #8D8D92;
+  --rmai-plum: #5C4B6E;
+  --rmai-plum-light: #F0EBF4;
+  --rmai-text: #555555;
+  --rmai-muted: #777777;
+  --rmai-bg: #FAFAFA;
+  --rmai-white: #FFFFFF;
+  --rmai-border: #E8E8EB;
+  --rmai-terminal: #0D1117;
+  --rmai-green: #22C55E;
 }
 
 /* ── Background ── */
 [data-md-color-scheme="default"] {
-  --md-default-bg-color: var(--rmai-offwhite);
+  --md-default-bg-color: var(--rmai-bg);
 }
 
 /* ── Header and nav ── */
 .md-header {
-  background-color: var(--rmai-black);
+  background-color: var(--rmai-white);
+  color: var(--rmai-black);
+  border-bottom: 1px solid var(--rmai-border);
+  box-shadow: none;
 }
 
-.md-tabs {
-  background-color: var(--rmai-slate);
+.md-header[data-md-state="shadow"] {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
 .md-header__topic {
   font-weight: 700;
+  color: var(--rmai-black);
+}
+
+.md-header__title {
+  color: var(--rmai-black);
+}
+
+.md-header .md-header__button {
+  color: var(--rmai-black);
+}
+
+.md-tabs {
+  background-color: var(--rmai-white);
+  border-bottom: 1px solid var(--rmai-border);
+}
+
+.md-tabs__link {
+  color: var(--rmai-text);
+  font-weight: 500;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: var(--rmai-plum);
 }
 
 /* ── Logo sizing — match header text height ── */
@@ -46,150 +75,167 @@
   width: auto;
 }
 
+/* ── Search ── */
+.md-search__input {
+  background-color: var(--rmai-bg);
+  border: 1px solid var(--rmai-border);
+  border-radius: 8px;
+}
+
 /* ── Typography ── */
 .md-typeset {
-  color: var(--rmai-black);
+  color: var(--rmai-text);
   font-weight: 400;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .md-typeset h1 {
   color: var(--rmai-black);
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.01em;
 }
 
 .md-typeset h2 {
   color: var(--rmai-black);
   font-weight: 700;
-  border-bottom: 2px solid var(--rmai-purple);
-  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--rmai-border);
+  padding-bottom: 0.4em;
 }
 
 .md-typeset h3 {
-  color: var(--rmai-slate);
-  font-weight: 600;
+  color: var(--rmai-black);
+  font-weight: 700;
 }
 
 .md-typeset strong {
   font-weight: 600;
+  color: var(--rmai-black);
 }
 
 /* ── Links ── */
 .md-typeset a {
-  color: var(--rmai-purple);
+  color: var(--rmai-plum);
   text-decoration: none;
 }
 
 .md-typeset a:hover {
-  color: var(--rmai-orange);
+  color: var(--rmai-black);
   text-decoration: underline;
 }
 
-/* ── Tables (brand spec) ── */
+/* ── Tables (clean, white cards) ── */
 .md-typeset table:not([class]) {
   border: 1px solid var(--rmai-border);
   border-collapse: collapse;
   font-size: 0.85rem;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .md-typeset table:not([class]) thead {
-  background-color: var(--rmai-oat);
+  background-color: var(--rmai-plum-light);
 }
 
 .md-typeset table:not([class]) th {
   color: var(--rmai-black);
   font-weight: 600;
   padding: 10px 14px;
-  border-bottom: 2px solid var(--rmai-purple);
+  border-bottom: 2px solid var(--rmai-plum);
   text-align: left;
 }
 
 .md-typeset table:not([class]) td {
   padding: 8px 14px;
   border-bottom: 1px solid var(--rmai-border);
-  color: var(--rmai-black);
+  color: var(--rmai-text);
 }
 
 .md-typeset table:not([class]) tbody tr:nth-child(even) {
-  background-color: var(--rmai-offwhite);
+  background-color: var(--rmai-bg);
 }
 
 .md-typeset table:not([class]) tbody tr:hover {
-  background-color: var(--rmai-oat);
+  background-color: var(--rmai-plum-light);
 }
 
 /* ── Admonitions ── */
 .md-typeset .admonition,
 .md-typeset details {
-  border-left: 4px solid var(--rmai-purple);
-  background-color: var(--rmai-offwhite);
+  border-left: 4px solid var(--rmai-plum);
+  background-color: var(--rmai-white);
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .md-typeset .admonition.note,
 .md-typeset details.note {
-  border-color: var(--rmai-purple);
+  border-color: var(--rmai-plum);
 }
 
 .md-typeset .admonition.tip,
 .md-typeset details.tip {
-  border-color: var(--rmai-orange);
+  border-color: var(--rmai-green);
 }
 
 .md-typeset .admonition-title,
 .md-typeset summary {
   font-weight: 600;
+  color: var(--rmai-black);
 }
 
 /* ── Code blocks ── */
 .md-typeset code {
-  background-color: #f0edf4;
+  background-color: var(--rmai-plum-light);
   color: var(--rmai-black);
-  border-radius: 3px;
-  padding: 0.1em 0.3em;
+  border-radius: 4px;
+  padding: 0.15em 0.35em;
   font-size: 0.85em;
 }
 
 .md-typeset pre > code {
-  background-color: var(--rmai-black);
-  color: #e0dce4;
+  background-color: var(--rmai-terminal);
+  color: #e6edf3;
   padding: 1em;
+  border-radius: 8px;
 }
 
 /* ── Content tabs ── */
 .md-typeset .tabbed-labels > label {
   font-weight: 600;
-  color: var(--rmai-slate);
+  color: var(--rmai-muted);
 }
 
 .md-typeset .tabbed-labels > label--active,
 .md-typeset .tabbed-labels > label:hover {
-  color: var(--rmai-purple);
+  color: var(--rmai-plum);
 }
 
 /* ── Grid cards (home page) ── */
 .md-typeset .grid.cards > ul > li {
+  background-color: var(--rmai-white);
   border: 1px solid var(--rmai-border);
-  border-radius: 8px;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  border-radius: 12px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
 .md-typeset .grid.cards > ul > li:hover {
-  border-color: var(--rmai-purple);
-  box-shadow: 0 4px 12px rgba(167, 122, 205, 0.15);
+  border-color: var(--rmai-plum);
+  box-shadow: 0 8px 24px rgba(92, 75, 110, 0.1);
+  transform: translateY(-2px);
 }
 
 /* ── Footer ── */
 .md-footer {
-  background-color: var(--rmai-slate);
+  background-color: var(--rmai-black);
 }
 
 .md-footer-meta {
   background-color: var(--rmai-black);
+  border-top: 1px solid #2a2b35;
 }
 
 .md-copyright {
-  color: #c4c4c8;
+  color: var(--rmai-muted);
   font-size: 0.75rem;
 }
 
@@ -199,7 +245,7 @@
 }
 
 .md-footer__title {
-  color: #e0dce4;
+  color: #e6edf3;
 }
 
 .md-social__link {
@@ -207,22 +253,26 @@
 }
 
 .md-social__link:hover {
-  color: var(--rmai-purple);
+  color: var(--rmai-plum-light);
 }
 
 /* ── Sidebar nav ── */
 .md-nav__link--active {
-  color: var(--rmai-purple) !important;
+  color: var(--rmai-plum) !important;
   font-weight: 600;
+}
+
+.md-nav__link:hover {
+  color: var(--rmai-plum);
 }
 
 /* ── Scrollbar accent ── */
 ::-webkit-scrollbar-thumb {
-  background-color: var(--rmai-purple);
+  background-color: var(--rmai-plum);
   border-radius: 4px;
 }
 
 /* ── Selection highlight ── */
 ::selection {
-  background-color: rgba(167, 122, 205, 0.25);
+  background-color: rgba(92, 75, 110, 0.2);
 }

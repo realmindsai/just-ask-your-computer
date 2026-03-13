@@ -19,7 +19,7 @@ theme:
     - navigation.sections
     - navigation.instant
     - navigation.top
-  logo: assets/images/rmai_logo_white.svg
+  logo: assets/images/rmai_logo.svg
   favicon: assets/images/rmai_logo.svg
   icon:
     repo: fontawesome/brands/github
