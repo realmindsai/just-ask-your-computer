@@ -62,6 +62,12 @@ You need:
 
 - A computer (Mac or Windows)
 - An internet connection
-- A **Claude Pro or Max subscription** ($20–100/month) for the primary tool — [sign up at claude.ai](https://claude.ai)
-- **Gemini CLI** is free with any Google account
-- **OpenAI Codex** requires a ChatGPT Plus/Pro subscription
+- **At least one AI tool** — pick whichever suits you:
+
+| Tool | Cost | Account |
+|------|------|---------|
+| **Gemini CLI** | Free (1,000 requests/day) | Any Google account |
+| **Claude Code** | $20–100/month | [Claude Pro or Max](https://claude.ai) |
+| **OpenAI Codex** | $20/month | [ChatGPT Plus/Pro](https://chatgpt.com) |
+
+You can install all three — they work side by side. See [AI Tools](toolkit/ai-tools.md) for details.
