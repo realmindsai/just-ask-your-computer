@@ -34,6 +34,9 @@ extra:
 extra_css:
   - assets/stylesheets/extra.css
 
+extra_javascript:
+  - assets/javascripts/extra.js
+
 nav:
   - Home: index.md
   - The Report: traffic-camera-report.md
