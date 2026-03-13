@@ -201,6 +201,83 @@
   border-radius: 8px;
 }
 
+/* ── Syntax highlighting — readable on terminal-dark background ── */
+.md-typeset .highlight .k,
+.md-typeset .highlight .kd,
+.md-typeset .highlight .kn,
+.md-typeset .highlight .kp,
+.md-typeset .highlight .kr,
+.md-typeset .highlight .kt,
+.md-typeset .highlight .nb,
+.md-typeset .highlight .bp {
+  color: #c4a3e0;
+}
+
+.md-typeset .highlight .s,
+.md-typeset .highlight .s1,
+.md-typeset .highlight .s2,
+.md-typeset .highlight .sa,
+.md-typeset .highlight .sb,
+.md-typeset .highlight .sc,
+.md-typeset .highlight .sd,
+.md-typeset .highlight .se,
+.md-typeset .highlight .sh,
+.md-typeset .highlight .si,
+.md-typeset .highlight .sx,
+.md-typeset .highlight .sr {
+  color: #a5d6ff;
+}
+
+.md-typeset .highlight .n,
+.md-typeset .highlight .na,
+.md-typeset .highlight .nc,
+.md-typeset .highlight .nd,
+.md-typeset .highlight .ni,
+.md-typeset .highlight .ne,
+.md-typeset .highlight .nf,
+.md-typeset .highlight .nl,
+.md-typeset .highlight .nn,
+.md-typeset .highlight .no,
+.md-typeset .highlight .nt,
+.md-typeset .highlight .nv,
+.md-typeset .highlight .nx {
+  color: #e6edf3;
+}
+
+.md-typeset .highlight .o,
+.md-typeset .highlight .ow {
+  color: #ff7b72;
+}
+
+.md-typeset .highlight .c,
+.md-typeset .highlight .c1,
+.md-typeset .highlight .ch,
+.md-typeset .highlight .cm,
+.md-typeset .highlight .cp,
+.md-typeset .highlight .cpf,
+.md-typeset .highlight .cs {
+  color: #8b949e;
+}
+
+.md-typeset .highlight .m,
+.md-typeset .highlight .mb,
+.md-typeset .highlight .mf,
+.md-typeset .highlight .mh,
+.md-typeset .highlight .mi,
+.md-typeset .highlight .mo {
+  color: #79c0ff;
+}
+
+.md-typeset .highlight .gd {
+  color: #ffa198;
+  background-color: rgba(248, 81, 73, 0.15);
+}
+
+.md-typeset .highlight .gi {
+  color: #56d364;
+  background-color: rgba(46, 160, 67, 0.15);
+}
+
 /* ── Content tabs ── */
 .md-typeset .tabbed-labels > label {
   font-weight: 600;
@@ -212,7 +289,7 @@
   color: var(--rmai-plum);
 }
 
-/* ── Grid cards (home page) ── */
+/* ── Grid cards (home page) — JS makes entire card clickable ── */
 .md-typeset .grid.cards > ul > li {
   background-color: var(--rmai-white);
   border: 1px solid var(--rmai-border);
