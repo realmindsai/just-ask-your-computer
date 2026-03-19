@@ -70,4 +70,4 @@ You need:
 | **Claude Code** | $20–100/month | [Claude Pro or Max](https://claude.ai) |
 | **OpenAI Codex** | $20/month | [ChatGPT Plus/Pro](https://chatgpt.com) |
 
-You can install all three — they work side by side. See [AI Tools](toolkit/ai-tools.md) for details.
+You can install all three — they work side by side. See [Command Line AI Tools](toolkit/ai-tools.md) or [Desktop AI Tools](toolkit/desktop-apps.md) for details.

@@ -1,27 +1,47 @@
-# Desktop Apps
+# Desktop AI Tools
 
-The web versions of Claude and ChatGPT can only see what you paste into the chat. The **desktop apps** can see the files on your computer. Point them at a folder and they can read, search, and work across everything in it — your data, your documents, your code.
+The web versions of Claude and ChatGPT can only see what you paste into the chat. The **desktop apps** can see the files on your computer. Point them at a project folder and they can read, search, and work across everything in it — your data, your documents, your code.
 
-That's the difference. Instead of copying and pasting snippets into a browser window, you give the AI access to a whole folder and have a conversation about what's in it.
-
----
-
-## At a glance
-
-| App | Provider | Cost | Download |
-|-----|----------|------|----------|
-| **Claude Desktop** | Anthropic | Pro $20/month, Max $100/month | [claude.ai/download](https://claude.ai/download) |
-| **ChatGPT Desktop** | OpenAI | Plus $20/month, Pro $200/month | [openai.com/chatgpt/download](https://openai.com/chatgpt/download/) |
-
-Both are standalone desktop apps — no terminal needed. Install, sign in, point at a folder, and start asking questions about your files.
+That's the difference. Instead of copying and pasting snippets into a browser window, you give the AI direct access to a folder and have a conversation about what's in it.
 
 ---
 
-## Claude Desktop
+## Your AI tool options
 
-Anthropic's desktop app. Give it access to a folder on your computer and Claude can read everything in it — spreadsheets, PDFs, code, data files, documents. Ask it to summarise, analyse, compare, or transform what's there. No copying and pasting.
+All five tools listed below read and write files directly on your local filesystem. The prompts are identical across all tools — only the interface where you type them differs.
 
-### Download and install
+**CLI Tools (terminal-based)** — see [Command Line AI Tools](ai-tools.md) for install instructions
+
+| Tool | Command | Notes |
+|------|---------|-------|
+| **Claude Code** | `claude` | Anthropic CLI |
+| **Codex CLI** | `codex` | OpenAI CLI, open source, free |
+| **Gemini CLI** | `gemini` | Google CLI |
+
+**Desktop Apps (GUI-based)** — covered on this page
+
+| Tool | Interface | Platform |
+|------|-----------|----------|
+| **Claude Cowork** | Tab inside Claude Desktop app | macOS (Apple Silicon) / Windows |
+| **Codex App** | Standalone desktop app from OpenAI | macOS (Apple Silicon) / Windows |
+
+---
+
+## How to use any of these tools
+
+1. **Point your AI tool at your project folder** — the folder containing your data and scripts. For CLI tools, open a terminal in that folder and launch the tool. For desktop apps, use the folder picker to grant access to that specific folder.
+2. **Type or paste your prompt.** All five tools work the same way — you describe the task, the AI reads your files, does the work, and writes results back to disk.
+3. **Watch and review.** The AI runs commands, creates files, and executes scripts for you. You review the results.
+
+The prompts are identical across all tools. They are shown once per exercise in the workshop handouts. Paste them into whichever tool you are using.
+
+---
+
+## Claude Cowork
+
+Claude Cowork is a tab inside the **Claude Desktop** app. It gives Claude direct access to a project folder on your computer — Claude can read your files, write new ones, run commands, and work across your whole project.
+
+### Step 1: Install Claude Desktop
 
 Go to [claude.ai/download](https://claude.ai/download).
 
@@ -32,6 +52,9 @@ Go to [claude.ai/download](https://claude.ai/download).
     3. Open Claude from Applications
     4. If macOS asks "Are you sure you want to open this?", click **Open**
 
+    !!! note "Apple Silicon required"
+        The Cowork tab requires an Apple Silicon Mac (M1 or later). The Chat tab works on all Macs.
+
 === "Windows"
 
     1. Run the downloaded `.exe` installer
@@ -41,77 +64,69 @@ Go to [claude.ai/download](https://claude.ai/download).
     !!! note "RMIT staff: you need elevated rights"
         RMIT-managed Windows PCs block software installation by default. You'll need to request temporary elevated rights before you can install Claude Desktop. See the [RMIT institution guide](../institutions/rmit.md#request-elevated-rights-for-claude-desktop) for the exact form and fields.
 
-### Sign in
+### Step 2: Sign in
 
 1. Open Claude Desktop
 2. Click **Sign in**
-3. Enter your email and password (the same account you use at [claude.ai](https://claude.ai))
-4. You're in — start a conversation
+3. Sign in with your Anthropic account (the same one you use at [claude.ai](https://claude.ai))
 
 ??? tip "Don't have an account yet?"
-    Go to [claude.ai](https://claude.ai) and sign up for a Pro or Max plan first. The free plan does not include Claude Desktop access.
+    Go to [claude.ai](https://claude.ai) and sign up for a Pro or Max plan. The free plan does not include Cowork access.
 
-### Give Claude access to your files
+### Step 3: Open the Cowork tab and select your project folder
 
-Once signed in, you need to tell Claude which folders it's allowed to read:
+1. In Claude Desktop, find the **mode selector** and click the **Cowork** tab (it may also appear as the **Code** tab)
+2. Select your **project folder** — the folder containing the files you want the AI to work with
+3. Choose **Local** as the environment
+4. Type your task and press **Enter**
 
-1. Open **Claude Desktop → Settings** (gear icon)
-2. Go to **Files**
-3. Click **Add Folder** and select the folder you want Claude to work with (e.g., your project folder, a data directory, or your OneDrive sync folder)
-4. Claude will ask for permission the first time — click **Allow**
+Claude reads the files in your project folder, proposes an approach, and gets to work. You can watch, redirect, or interrupt at any time.
 
-After that, Claude can see everything in that folder. Try asking: *"What files are in this folder?"* or *"Summarise the key findings across all the PDFs in here."*
-
-!!! note "Claude only reads what you share"
-    Claude can't see your whole computer — only the specific folders you add. You can add or remove folders at any time in Settings → Files.
+!!! note "Keep the app open"
+    Claude Desktop must stay open while Cowork is running. If you close the app, the session ends.
 
 ---
 
-## ChatGPT Desktop (OpenAI)
+## Codex App (OpenAI)
 
-OpenAI's desktop app. Same idea — point it at a folder and ChatGPT can read your local files. Ask it to work with your data, documents, or code. Also includes image generation and the Codex coding assistant.
+The Codex App is a standalone desktop app from OpenAI. Same idea as Cowork — point it at a project folder and the AI reads and writes your files directly.
 
-### Download and install
-
-Go to [openai.com/chatgpt/download](https://openai.com/chatgpt/download/).
+### Step 1: Install the Codex App
 
 === "Mac"
 
-    1. Open the downloaded `.dmg` file
-    2. Drag **ChatGPT** to your Applications folder
-    3. Open ChatGPT from Applications
-    4. If macOS asks "Are you sure you want to open this?", click **Open**
+    Download from [openai.com/codex](https://openai.com/codex/) and open the installer. Drag **Codex** to your Applications folder.
+
+    !!! note "Apple Silicon required"
+        The Codex App requires an Apple Silicon Mac (M1 or later).
 
 === "Windows"
 
-    1. Run the downloaded `.exe` installer
-    2. Follow the prompts to complete installation
-    3. Open ChatGPT from the Start menu
+    Install from the [Microsoft Store](https://apps.microsoft.com/detail/9plm9xgg6vks) or via PowerShell:
+
+    ```powershell
+    winget install Codex -s msstore
+    ```
 
     !!! note "RMIT staff: you may need elevated rights"
-        If the installer is blocked on your RMIT-managed PC, request temporary elevated rights. See the [RMIT institution guide](../institutions/rmit.md#request-elevated-rights-for-claude-desktop) for the process — use the same form, but mention you need to install "ChatGPT by OpenAI from https://openai.com/chatgpt/download".
+        If the Microsoft Store is blocked on your RMIT-managed PC, request temporary elevated rights. See the [RMIT institution guide](../institutions/rmit.md#request-elevated-rights-for-claude-desktop) for the process — use the same form, but mention you need to install "Codex by OpenAI from the Microsoft Store".
 
-### Sign in
+### Step 2: Sign in
 
-1. Open ChatGPT
-2. Click **Log in**
-3. Sign in with your OpenAI account (the same one you use at [chatgpt.com](https://chatgpt.com))
-4. You're in — start a conversation
+1. Open the Codex App
+2. Sign in with your **ChatGPT account** (the same one you use at [chatgpt.com](https://chatgpt.com)) or an OpenAI API key
 
 ??? tip "Don't have an account yet?"
-    Go to [chatgpt.com](https://chatgpt.com) and sign up. The free plan gives limited access. For full features (GPT-4o, Codex, image generation), you'll need a Plus ($20/month) or Pro ($200/month) subscription.
+    Go to [chatgpt.com](https://chatgpt.com) and sign up. ChatGPT Plus, Pro, Business, Edu, and Enterprise plans include Codex.
 
-### Give ChatGPT access to your files
+### Step 3: Add a project and start working
 
-1. Open a conversation in the ChatGPT desktop app
-2. Click the **paperclip icon** (attach) in the message box
-3. Select **Choose File** or **Choose Folder** to give ChatGPT access to local files or an entire directory
-4. ChatGPT will ask for permission the first time — click **Allow**
+1. Click **Add new project** (or press `Ctrl+O` / `Cmd+O`)
+2. Select your **project folder** — the folder containing the files you want the AI to work with
+3. Make sure **Local** is selected
+4. Type your task and press **Enter**
 
-Once connected, ask questions about your files: *"What's in this dataset?"* or *"Compare these two reports."*
-
-!!! note "ChatGPT only reads what you share"
-    Like Claude, ChatGPT can only see files and folders you explicitly share with it. You control what it has access to.
+Codex reads the files in your project folder and starts working. You can run multiple projects in parallel — each one gets its own thread.
 
 ---
 
@@ -121,7 +136,10 @@ Once connected, ask questions about your files: *"What's in this dataset?"* or *
     You likely need elevated rights. On a managed work machine (RMIT, La Trobe, etc.), your IT department controls what you can install. See your [institution guide](../institutions/index.md) for the request process.
 
 ??? tip "App installs but won't connect"
-    Both apps need internet access to work. If you're on a corporate network that blocks certain sites, check with your IT team that `claude.ai` (for Claude) and `chatgpt.com` (for ChatGPT) aren't blocked by your firewall or proxy.
+    Both apps need internet access to work. If you're on a corporate network that blocks certain sites, check with your IT team that `claude.ai` (for Claude) and `chatgpt.com` / `openai.com` (for Codex) aren't blocked by your firewall or proxy.
 
-??? tip "Which subscription do I actually need?"
-    For the workshops, **Claude Pro ($20/month)** is the primary tool. ChatGPT Plus is optional but useful as a second opinion. Both have free tiers you can try first, but the free tiers have usage limits and may not include all features.
+??? tip "Cowork tab not showing up on Mac"
+    The Cowork tab requires Apple Silicon (M1 or later). If you're on an Intel Mac, use [Claude Code in the terminal](ai-tools.md) instead — it has the same capabilities.
+
+??? tip "Codex App: 'Add new project' not working"
+    Make sure you've signed in first. The project picker only works after authentication. Try restarting the app if the button is unresponsive.

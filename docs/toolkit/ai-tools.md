@@ -1,12 +1,15 @@
-# AI Tools
+# Command Line AI Tools
 
-Three AI assistants you can talk to in your terminal. Claude Code is the primary tool; the others are optional.
+Three AI assistants you can run in your terminal. Each one opens a text interface where you type prompts and the AI works with the files in your current folder. Claude Code is the primary tool; the others are optional.
+
+!!! note "Prefer a desktop app?"
+    If you'd rather skip the terminal, see [Desktop AI Tools](desktop-apps.md) for Claude Cowork and the Codex App — same capabilities, graphical interface.
 
 ---
 
 ## Claude Code (primary)
 
-A conversational AI assistant in your terminal. Ask it questions, give it tasks, and it does the work.
+Anthropic's AI assistant. Open a terminal in your project folder, type `claude`, and you're in a conversation where Claude can read, edit, and create files directly on disk.
 
 **Requires:** Claude Pro or Max subscription ($20–100/month) — [sign up at claude.ai](https://claude.ai)
 
@@ -51,23 +54,37 @@ Exit Claude Code with `Ctrl+C` or type `/exit`.
 
 ---
 
-## Claude Desktop (GUI alternative)
+## Codex CLI (free)
 
-The same AI, but as a desktop app — no terminal needed. Has fewer automation features than Claude Code but handles conversation, analysis, and writing well.
+OpenAI's AI in your terminal. Open source and free to use.
 
-**Requires:** Same Claude Pro or Max subscription
+**Install:**
 
-**Install:** Download from [claude.ai/download](https://claude.ai/download)
+```bash
+npm install -g @openai/codex
+```
+
+**Log in:**
+
+```bash
+codex
+```
+
+Same browser flow as Claude Code — URL, sign in, approve, come back. Or use an API key from [platform.openai.com/api-keys](https://platform.openai.com/api-keys):
 
 === "Mac"
 
-    Open the .dmg file, drag Claude to Applications. If macOS asks whether you're sure, click **Open**.
+    ```bash
+    echo 'export OPENAI_API_KEY="paste-your-key-here"' >> ~/.zshrc
+    exec zsh
+    ```
 
-=== "Windows"
+=== "Linux (WSL2)"
 
-    Run the installer. On managed work machines, you may need elevated rights — see your [institution guide](../institutions/index.md).
-
-Sign in with your Anthropic account and you're ready to go.
+    ```bash
+    echo 'export OPENAI_API_KEY="paste-your-key-here"' >> ~/.bashrc
+    exec bash
+    ```
 
 ---
 
@@ -102,42 +119,6 @@ Or use a free API key from [aistudio.google.com/apikey](https://aistudio.google.
 
     ```bash
     echo 'export GEMINI_API_KEY="paste-your-key-here"' >> ~/.bashrc
-    exec bash
-    ```
-
----
-
-## OpenAI Codex (optional)
-
-OpenAI's AI in your terminal.
-
-**Requires:** ChatGPT Plus, Pro, Team, or Edu subscription
-
-**Install:**
-
-```bash
-npm install -g @openai/codex
-```
-
-**Log in:**
-
-```bash
-codex
-```
-
-Same browser flow, or use an API key from [platform.openai.com/api-keys](https://platform.openai.com/api-keys):
-
-=== "Mac"
-
-    ```bash
-    echo 'export OPENAI_API_KEY="paste-your-key-here"' >> ~/.zshrc
-    exec zsh
-    ```
-
-=== "Linux (WSL2)"
-
-    ```bash
-    echo 'export OPENAI_API_KEY="paste-your-key-here"' >> ~/.bashrc
     exec bash
     ```
 

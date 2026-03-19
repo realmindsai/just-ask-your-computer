@@ -48,8 +48,8 @@ nav:
     - WSL Home Folder: getting-started/wsl-home-folder.md
   - The Toolkit:
     - Core Stack: toolkit/core-stack.md
-    - AI Tools: toolkit/ai-tools.md
-    - Desktop Apps: toolkit/desktop-apps.md
+    - Desktop AI Tools: toolkit/desktop-apps.md
+    - Command Line AI Tools: toolkit/ai-tools.md
     - Recommended Tools: toolkit/recommended-tools.md
     - Tool Catalog: toolkit/tool-catalog.md
     - Project Config: toolkit/project-config.md
