@@ -6,37 +6,6 @@ That's the difference. Instead of copying and pasting snippets into a browser wi
 
 ---
 
-## Your AI tool options
-
-All five tools listed below read and write files directly on your local filesystem. The prompts are identical across all tools — only the interface where you type them differs.
-
-**CLI Tools (terminal-based)** — see [Command Line AI Tools](ai-tools.md) for install instructions
-
-| Tool | Command | Notes |
-|------|---------|-------|
-| **Claude Code** | `claude` | Anthropic CLI |
-| **Codex CLI** | `codex` | OpenAI CLI, open source, free |
-| **Gemini CLI** | `gemini` | Google CLI |
-
-**Desktop Apps (GUI-based)** — covered on this page
-
-| Tool | Interface | Platform |
-|------|-----------|----------|
-| **Claude Cowork** | Tab inside Claude Desktop app | macOS (Apple Silicon) / Windows |
-| **Codex App** | Standalone desktop app from OpenAI | macOS (Apple Silicon) / Windows |
-
----
-
-## How to use any of these tools
-
-1. **Point your AI tool at your project folder** — the folder containing your data and scripts. For CLI tools, open a terminal in that folder and launch the tool. For desktop apps, use the folder picker to grant access to that specific folder.
-2. **Type or paste your prompt.** All five tools work the same way — you describe the task, the AI reads your files, does the work, and writes results back to disk.
-3. **Watch and review.** The AI runs commands, creates files, and executes scripts for you. You review the results.
-
-The prompts are identical across all tools. They are shown once per exercise in the workshop handouts. Paste them into whichever tool you are using.
-
----
-
 ## Claude Cowork
 
 Claude Cowork is a tab inside the **Claude Desktop** app. It gives Claude direct access to a project folder on your computer — Claude can read your files, write new ones, run commands, and work across your whole project.
