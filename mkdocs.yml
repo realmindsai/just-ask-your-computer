@@ -49,6 +49,7 @@ nav:
   - The Toolkit:
     - Core Stack: toolkit/core-stack.md
     - AI Tools: toolkit/ai-tools.md
+    - Desktop Apps: toolkit/desktop-apps.md
     - Recommended Tools: toolkit/recommended-tools.md
     - Tool Catalog: toolkit/tool-catalog.md
     - Project Config: toolkit/project-config.md
